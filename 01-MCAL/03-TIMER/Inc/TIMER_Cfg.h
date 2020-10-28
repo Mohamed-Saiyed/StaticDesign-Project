@@ -1,0 +1,12 @@
+#ifndef TIMER_CFG_H
+#define TIMER_CFG_H
+
+/*Options:
+			TIMER_CHANNEL_1
+			TIMER_CHANNEL_2
+			TIMER_CHANNEL_3*/
+			
+#define TIMER_CHANNEL	TIMER_CHANNEL_1
+ 
+
+#endif /*TIMER_CFG_H*/

@@ -1,0 +1,36 @@
+#ifndef LCD_CFG_H
+#define LCD_CFG_H
+
+/*Options:
+			LCD_DATA_BITS_MODE_4
+			LCD_DATA_BITS_MODE_8
+							*/			
+#define LCD_DATA_MODE   LCD_DATA_BITS_MODE_8
+
+
+/*Options:       
+			LCD_DATA_PORTA	
+			LCD_DATA_PORTB	 
+			LCD_DATA_PORTC	 
+			LCD_DATA_PORTD	
+*/ 
+#define LCD_DATA_PORT      LCD_DATA_PORTA
+
+/*Options:       
+			LCD_CONTROL_PORTA
+			LCD_CONTROL_PORTB
+			LCD_CONTROL_PORTC
+			LCD_CONTROL_PORTD
+*/ 
+#define LCD_CONTROL_PORT   LCD_CONTROL_PORTD
+
+/*Options:       
+			UPPER_PORT_PINS
+			LOWER_PORT_PINS
+*/ 
+#if (LCD_DATA_MODE == LCD_DATA_BITS_MODE_4 )
+	#define LCD_DATA_PORT_PART	UPPER_PORT_PINS
+#endif
+
+
+#endif /*LCD_CFG_H*/

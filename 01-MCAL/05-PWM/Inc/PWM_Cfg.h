@@ -1,0 +1,17 @@
+#ifndef PWM_CFG_H
+#define PWM_CFG_H
+
+/*Options:
+			PWM_CHANNEL_1
+			PWM_CHANNEL_2
+			PWM_CHANNEL_3*/
+			
+#define PWM_CHANNEL		PWM_CHANNEL_3
+ 
+/*Options:
+			PWM_FAST_MODE_ENABLE
+			PWM_FAST_MODE_DISABLE*/
+					
+#define PWM_FAST_MODE 	PWM_FAST_MODE_DISABLE
+
+#endif /*PWM_CFG_H*/
